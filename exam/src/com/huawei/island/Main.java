@@ -1,4 +1,4 @@
-package com.huawei.river;
+package com.huawei.island;
 
 import java.util.Scanner;
 
