@@ -12,10 +12,10 @@ public class MergeTwoBinaryTrees {
         if(t1!=null&&t2!=null){
             t1.val +=t2.val;
         }
-        if(t1==null&&t2!=null){
+        if(t1 == null){
             return t2;
         }
-        if(t1!=null&&t2==null){
+        if(t2 == null){
             return t1;
         }
         TreeNode left = dfs(t1.left,t2.left);
