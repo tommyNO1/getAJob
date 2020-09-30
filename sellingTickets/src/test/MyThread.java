@@ -1,4 +1,4 @@
-package com.test;
+package test;
 /*
 * 继承Thread类的线程创建方法
 * 1.创建一个继承于Thread类的子类

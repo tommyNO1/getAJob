@@ -1,4 +1,4 @@
-package com.test;
+package test;
 /*
 * 实现Runnable接口创建线程
 * 1.创建一个实现了Runnable接口的类
