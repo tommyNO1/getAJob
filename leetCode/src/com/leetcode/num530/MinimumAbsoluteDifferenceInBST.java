@@ -1,6 +1,6 @@
 package com.leetcode.num530;
 
-import com.leetcode.dataStruct.TreeNode;
+import com.leetcode.dataStructure.TreeNode;
 
 public class MinimumAbsoluteDifferenceInBST {
     int min=Integer.MAX_VALUE;

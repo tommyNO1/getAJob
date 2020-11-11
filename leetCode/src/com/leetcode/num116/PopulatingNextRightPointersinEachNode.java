@@ -1,6 +1,6 @@
 package com.leetcode.num116;
 
-import com.leetcode.dataStruct.Node;
+import com.leetcode.dataStructure.Node;
 
 public class PopulatingNextRightPointersinEachNode {
     public Node connect(Node root) {

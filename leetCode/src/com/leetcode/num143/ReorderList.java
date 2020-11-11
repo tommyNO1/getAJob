@@ -1,6 +1,6 @@
 package com.leetcode.num143;
 
-import com.leetcode.dataStruct.ListNode;
+import com.leetcode.dataStructure.ListNode;
 
 import java.util.Deque;
 import java.util.LinkedList;

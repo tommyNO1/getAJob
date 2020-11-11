@@ -1,4 +1,4 @@
-package com.leetcode.dataStruct;
+package com.leetcode.dataStructure;
 
 public class Node {
     public int val;

@@ -1,6 +1,6 @@
 package com.leetcode.num129;
 
-import com.leetcode.dataStruct.TreeNode;
+import com.leetcode.dataStructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

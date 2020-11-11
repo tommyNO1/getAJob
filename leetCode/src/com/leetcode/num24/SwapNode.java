@@ -1,6 +1,6 @@
 package com.leetcode.num24;
 
-import com.leetcode.dataStruct.ListNode;
+import com.leetcode.dataStructure.ListNode;
 
 public class SwapNode {
     public ListNode swapPairs(ListNode head) {

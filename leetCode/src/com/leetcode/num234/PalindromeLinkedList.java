@@ -1,6 +1,6 @@
 package com.leetcode.num234;
 
-import com.leetcode.dataStruct.ListNode;
+import com.leetcode.dataStructure.ListNode;
 
 public class PalindromeLinkedList {
     public boolean isPalindrome(ListNode head) {
