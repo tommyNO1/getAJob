@@ -16,14 +16,14 @@ public class Test02 {
         Field[] fields = c1.getFields(); //只能找到public属性
         fields = c1.getDeclaredFields();//找到全部属性
         Field field = c1.getField("name");
-        for (Field field1:fields){
+        for (Field field1 : fields) {
             System.out.println(field1);
         }
 
         //获得类的方法
         Method[] methods = c1.getMethods();//获得本类及其父类的全部public方法
         Method[] methods1 = c1.getDeclaredMethods();//获得本类的所有方法（不包括父类）
-        for(Method method:methods1){
+        for (Method method : methods1) {
             System.out.println(method);
         }
         //获得指定方法

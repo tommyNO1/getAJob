@@ -19,10 +19,10 @@ public class CombinationSumIII {
         if (target < 0) {
             return;
         }
-        for (int i = start; i <= 9; i++){
+        for (int i = start; i <= 9; i++) {
             path.add(i);
-            dfs(path,res,depth-1,target-i,i+1);
-            path.remove(path.size()-1);
+            dfs(path, res, depth - 1, target - i, i + 1);
+            path.remove(path.size() - 1);
         }
     }
 }

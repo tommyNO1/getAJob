@@ -18,8 +18,8 @@ public class BufferSteamTest {
 
             byte[] buffer = new byte[10];
             int len;
-            while ((len = bufferedInputStream.read(buffer))!=-1){
-                bufferedOutputStream.write(buffer,0,len);
+            while ((len = bufferedInputStream.read(buffer)) != -1) {
+                bufferedOutputStream.write(buffer, 0, len);
             }
         } catch (IOException e) {
             e.printStackTrace();

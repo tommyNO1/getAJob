@@ -19,7 +19,7 @@ public class AverageOfLevelsInBinaryTree {
                 if (node.left != null) queue.add(node.left);
                 if (node.right != null) queue.add(node.right);
             }
-            res.add(sum/levelNum);
+            res.add(sum / levelNum);
         }
 
         return res;

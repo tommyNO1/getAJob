@@ -10,9 +10,9 @@ public class StandardStream {
         try {
             InputStreamReader inputStreamReader = new InputStreamReader(System.in);
             bufferedReader = new BufferedReader(inputStreamReader);
-            while (true){
+            while (true) {
                 String data = bufferedReader.readLine();
-                if(data.equalsIgnoreCase("e")||data.equalsIgnoreCase("exit")){
+                if (data.equalsIgnoreCase("e") || data.equalsIgnoreCase("exit")) {
                     System.out.println("程序结束");
                     break;
                 }

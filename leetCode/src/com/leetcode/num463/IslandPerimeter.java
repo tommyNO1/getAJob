@@ -16,10 +16,10 @@ public class IslandPerimeter {
                     if (j - 1 >= 0 && grid[i][j - 1] == 1) {
                         count++;
                     }
-                    if (j + 1 < grid[0].length && grid[i][j + 1] == 1){
+                    if (j + 1 < grid[0].length && grid[i][j + 1] == 1) {
                         count++;
                     }
-                    sum +=(4-count);
+                    sum += (4 - count);
                 }
             }
         }

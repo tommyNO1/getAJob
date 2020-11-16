@@ -15,7 +15,7 @@ public class Solution49 {
             if (dp[b] * 3 == dp[i]) b++;
             if (dp[c] * 5 == dp[i]) c++;
         }
-        return dp[n-1];
+        return dp[n - 1];
     }
 
 }

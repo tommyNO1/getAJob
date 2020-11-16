@@ -13,11 +13,11 @@ public class FileReaderWriterTest2 {
             fileReader = new FileReader(file);
             char[] cbuf = new char[5];
             int len;
-            while ((len = fileReader.read(cbuf))!=-1){
+            while ((len = fileReader.read(cbuf)) != -1) {
 //                for (int i = 0; i <len ; i++) {
 //                    System.out.print(cbuf[i]);
 //                }
-                String str = new String(cbuf,0,len);
+                String str = new String(cbuf, 0, len);
                 System.out.print(str);
             }
         } catch (IOException e) {

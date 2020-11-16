@@ -12,23 +12,23 @@ public class ValidParentheses {
             }
 
             if (s.charAt(i) == ')') {
-                if (!stack.isEmpty()&&stack.peek() == '(') {
+                if (!stack.isEmpty() && stack.peek() == '(') {
                     stack.poll();
-                }else {
+                } else {
                     return false;
                 }
             }
             if (s.charAt(i) == '}') {
-                if (!stack.isEmpty()&&stack.peek() == '(') {
+                if (!stack.isEmpty() && stack.peek() == '(') {
                     stack.poll();
-                }else {
+                } else {
                     return false;
                 }
             }
             if (s.charAt(i) == ']') {
-                if (!stack.isEmpty()&&stack.peek() == '(') {
+                if (!stack.isEmpty() && stack.peek() == '(') {
                     stack.poll();
-                }else {
+                } else {
                     return false;
                 }
             }

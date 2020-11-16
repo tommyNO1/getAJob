@@ -7,11 +7,11 @@ import java.util.Map;
 
 //通过反射获得泛型
 public class Test11 {
-    public void test1(Map<String,User>map ,List<User> list){
+    public void test1(Map<String, User> map, List<User> list) {
         System.out.println("test1");
     }
 
-    public Map<String,User> test2(){
+    public Map<String, User> test2() {
         System.out.println("test2");
         return null;
     }
@@ -19,7 +19,7 @@ public class Test11 {
     public static void main(String[] args) throws NoSuchMethodException {
         Method test1 = Test11.class.getDeclaredMethod("test1", Map.class, List.class);
         Type[] genericParameterTypes = test1.getGenericParameterTypes();
-        for(Type type:genericParameterTypes){
+        for (Type type : genericParameterTypes) {
             System.out.println(type);
         }
     }

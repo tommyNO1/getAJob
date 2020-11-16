@@ -16,7 +16,7 @@ public class Test09 {
         System.out.println(o);
 
         //通过构造器创建对象
-        Constructor constructor = c1.getConstructor(String.class,String.class);
+        Constructor constructor = c1.getConstructor(String.class, String.class);
         User user2 = (User) constructor.newInstance("tommy", "25");
         System.out.println(user2);
 
@@ -26,18 +26,18 @@ public class Test09 {
         Method setAge = c1.getDeclaredMethod("setAge", String.class);
         //invoke:激活的意思
         //（对象，“方法的值”）
-        setAge.invoke(user3,"25");
+        setAge.invoke(user3, "25");
         System.out.println(user3);
 
         //通过反射操作属性
         Field name = c1.getDeclaredField("name");
-        name.set(user3,"zhongming");
+        name.set(user3, "zhongming");
         System.out.println(user3);
 
         //通过反射操作私有属性
         Field age = c1.getDeclaredField("age");
         age.setAccessible(true);
-        age.set(user3,"20");
+        age.set(user3, "20");
         System.out.println(user3);
 
     }

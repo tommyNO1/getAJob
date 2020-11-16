@@ -3,8 +3,8 @@ package com.leetcode.num684;
 public class RedundantConnection {
     public int[] findRedundantConnection(int[][] edges) {
         int[] res = new int[2];
-        int[] father = new int[edges.length+1];
-        for (int i = 0; i < edges.length+1; i++) {
+        int[] father = new int[edges.length + 1];
+        for (int i = 0; i < edges.length + 1; i++) {
             father[i] = i;
         }
         for (int[] num : edges) {

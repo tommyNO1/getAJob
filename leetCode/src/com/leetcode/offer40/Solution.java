@@ -3,10 +3,10 @@ package com.leetcode.offer40;
 public class Solution {
     public static void main(String[] args) {
         int[] arr = new int[]{4, 5, 1, 6, 2, 7, 3, 8};
-        int k=1;
+        int k = 1;
         int[] res = getLeastNumbers(arr, k);
-        for(int i=0;i<k;i++){
-            System.out.print(res[i]+",");
+        for (int i = 0; i < k; i++) {
+            System.out.print(res[i] + ",");
         }
 
     }

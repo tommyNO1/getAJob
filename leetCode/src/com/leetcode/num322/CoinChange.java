@@ -7,7 +7,7 @@ public class CoinChange {
 
     public int coinChange(int[] coins, int amount) {
         Arrays.sort(coins);
-        dfs(coins, amount, 0,coins.length-1);
+        dfs(coins, amount, 0, coins.length - 1);
         return res;
     }
 
@@ -16,17 +16,17 @@ public class CoinChange {
         if (index < 0) {
             return;
         }
-        for(int i=amount/coins[index];i>=0;i--){
-            int na = amount-i*coins[index];
-            int ncnt = count+i;
-            if(na==0){
-                res = Math.min(na,ncnt);
+        for (int i = amount / coins[index]; i >= 0; i--) {
+            int na = amount - i * coins[index];
+            int ncnt = count + i;
+            if (na == 0) {
+                res = Math.min(na, ncnt);
                 break;
             }
-            if(ncnt+1>res){
+            if (ncnt + 1 > res) {
                 break;
             }
-            dfs(coins,na,ncnt,index-1);
+            dfs(coins, na, ncnt, index - 1);
         }
     }
 }

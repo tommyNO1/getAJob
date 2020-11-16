@@ -14,7 +14,7 @@ public class DataInputStreamTest {
             int age = dataInputStreamTest.readInt();
             boolean is = dataInputStreamTest.readBoolean();
 
-            System.out.println(name+age+is);
+            System.out.println(name + age + is);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

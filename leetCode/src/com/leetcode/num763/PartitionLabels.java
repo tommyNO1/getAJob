@@ -17,12 +17,12 @@ public class PartitionLabels {
             while (S.charAt(i) != S.charAt(k)) {
                 k--;
             }
-            if(k>pEnd){
+            if (k > pEnd) {
                 pEnd = k;
             }
             if (i == pEnd) {
-                res.add(pEnd - pHead+1);
-                pHead = i+1;
+                res.add(pEnd - pHead + 1);
+                pHead = i + 1;
             }
         }
         return res;

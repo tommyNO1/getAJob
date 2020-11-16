@@ -19,8 +19,8 @@ public class ImageCopy {
             //传输流
             byte[] buff = new byte[256];
             int len;
-            while ((len = fileInputStream.read(buff))!=-1){
-                fileOutputStream.write(buff,0,len);
+            while ((len = fileInputStream.read(buff)) != -1) {
+                fileOutputStream.write(buff, 0, len);
             }
         } catch (IOException e) {
             e.printStackTrace();

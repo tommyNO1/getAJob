@@ -31,7 +31,7 @@ public class BinarySearch {
                 right = mid;
             }
         }
-        if(left==nums.length) return -1;
+        if (left == nums.length) return -1;
         return nums[left] == target ? left : -1;
     }
 
@@ -49,7 +49,7 @@ public class BinarySearch {
                 right = mid;
             }
         }
-        if(left==0) return -1;
+        if (left == 0) return -1;
         return nums[left - 1] == target ? left - 1 : -1;
     }
 }

@@ -8,7 +8,7 @@ public class SolutionFor257 {
 
     public List<String> binaryTreePaths(TreeNode root) {
         List<TreeNode> list = new LinkedList<>();
-        dfs(root,list);
+        dfs(root, list);
         return res;
     }
 

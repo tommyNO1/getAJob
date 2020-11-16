@@ -20,21 +20,21 @@ public class FileCopy {
             //数据的读入和写出操作
             char[] cbuf = new char[2];
             int len;
-            while ((len=fileReader.read(cbuf))!=-1){
-                fileWriter.write(cbuf,0,len);
+            while ((len = fileReader.read(cbuf)) != -1) {
+                fileWriter.write(cbuf, 0, len);
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
-                if(fileReader!=null)
-                fileReader.close();
+                if (fileReader != null)
+                    fileReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
             try {
-                if(fileWriter!=null)
-                fileWriter.close();
+                if (fileWriter != null)
+                    fileWriter.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

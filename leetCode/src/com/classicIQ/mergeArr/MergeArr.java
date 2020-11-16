@@ -2,8 +2,8 @@ package com.classicIQ.mergeArr;
 
 public class MergeArr {
     public static void main(String[] args) {
-        int[] nums1 = new int[]{2,5,6,0,0,0};
-        int[] nums2 = new int[]{1,2,3};
+        int[] nums1 = new int[]{2, 5, 6, 0, 0, 0};
+        int[] nums2 = new int[]{1, 2, 3};
         merge(nums1, 3, nums2, 3);
         for (int num : nums1)
             System.out.println(num);
@@ -23,9 +23,9 @@ public class MergeArr {
             }
             p--;
         }
-        if(p1<0){
-            for(;p>=0;p--){
-                nums1[p]=nums2[p];
+        if (p1 < 0) {
+            for (; p >= 0; p--) {
+                nums1[p] = nums2[p];
             }
         }
     }

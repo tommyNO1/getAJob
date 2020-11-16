@@ -2,6 +2,7 @@ package com.leetcode.num538;
 
 public class ConvertBSTToGreaterTree {
     int sum;
+
     public TreeNode convertBST(TreeNode root) {
         TreeNode head = root;
         dfs(root);
@@ -10,7 +11,7 @@ public class ConvertBSTToGreaterTree {
     }
 
     private void dfs(TreeNode root) {
-        if(root==null){
+        if (root == null) {
             return;
         }
         dfs(root.right);

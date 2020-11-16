@@ -13,8 +13,8 @@ public class InputSteamReaderTest {
 
             char[] cbuf = new char[20];
             int len;
-            while ((len=inputStreamReader.read(cbuf))!=-1){
-                String str = new String(cbuf,0,len);
+            while ((len = inputStreamReader.read(cbuf)) != -1) {
+                String str = new String(cbuf, 0, len);
                 System.out.print(str);
             }
         } catch (IOException e) {

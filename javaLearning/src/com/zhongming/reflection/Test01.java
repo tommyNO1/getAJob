@@ -26,23 +26,26 @@ public class Test01 {
 
 }
 
-class Person{
+class Person {
     public String name;
 
-    public Person(){};
+    public Person() {
+    }
+
+    ;
 
     public Person(String name) {
         this.name = name;
     }
 }
 
-class Student extends Person{
+class Student extends Person {
     public Student() {
         this.name = "学生";
     }
 }
 
-class Teacher extends Person{
+class Teacher extends Person {
     public Teacher() {
         this.name = "老师";
     }

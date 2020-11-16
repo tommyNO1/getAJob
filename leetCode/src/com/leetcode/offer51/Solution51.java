@@ -1,7 +1,8 @@
 package com.leetcode.offer51;
 
 public class Solution51 {
-     int count = 0;
+    int count = 0;
+
     private void mergeSortRecur(int[] arr, int start, int end) {
         if (start >= end) return;
         int len = end - start;
@@ -13,27 +14,27 @@ public class Solution51 {
         int k = 0;
         int[] res = new int[end - start + 1];
         while (start1 <= end1 && start2 <= end2) {
-            if(arr[start1]<arr[start2]){
+            if (arr[start1] < arr[start2]) {
                 res[k] = arr[start1];
                 start1++;
-            }else {
+            } else {
                 res[k] = arr[start2];
                 start2++;
-                count+=(end1-start1+1);
+                count += (end1 - start1 + 1);
             }
             k++;
         }
-        while(start1<=end1){
+        while (start1 <= end1) {
             res[k] = arr[start1];
             start1++;
             k++;
         }
-        while (start2<=end2){
+        while (start2 <= end2) {
             res[k] = arr[start2];
             start2++;
             k++;
         }
-        for(k=0;k<res.length;k++)
-            arr[start+k] = res[k];
+        for (k = 0; k < res.length; k++)
+            arr[start + k] = res[k];
     }
 }

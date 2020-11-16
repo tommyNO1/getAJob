@@ -13,9 +13,9 @@ public class SumOfLeftLeaves {
         if (root == null) {
             return;
         }
-        if (root.left!=null){
-            if(root.left.left==null&&root.left.right==null)
-            sum +=root.left.val;
+        if (root.left != null) {
+            if (root.left.left == null && root.left.right == null)
+                sum += root.left.val;
         }
         dfs(root.left);
         dfs(root.right);

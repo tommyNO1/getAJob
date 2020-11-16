@@ -15,24 +15,24 @@ public class Solution59_2 {
         }
 
         public int max_value() {
-            if(queue2.isEmpty()) return -1;
+            if (queue2.isEmpty()) return -1;
             return queue2.peekFirst();
         }
 
         public void push_back(int value) {
             queue1.add(value);
-            while (!queue2.isEmpty()&&value>queue2.peekLast()){
+            while (!queue2.isEmpty() && value > queue2.peekLast()) {
                 queue2.removeLast();
             }
             queue2.addLast(value);
         }
 
         public int pop_front() {
-            if(queue1.isEmpty()) return -1;
+            if (queue1.isEmpty()) return -1;
             int temp = queue1.peek();
-            if(queue1.peek()<queue2.peekFirst()){
+            if (queue1.peek() < queue2.peekFirst()) {
                 queue1.remove();
-            }else {
+            } else {
                 queue1.remove();
                 queue2.removeFirst();
             }

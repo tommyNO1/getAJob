@@ -7,13 +7,13 @@ public class UniqueOccurrences {
         Arrays.sort(arr);
         int count = 1;
         Set<Integer> set = new HashSet<>();
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]==arr[i-1]){
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] == arr[i - 1]) {
                 count++;
-            }else {
-                if(set.contains(count)) return false;
+            } else {
+                if (set.contains(count)) return false;
                 set.add(count);
-                count=1;
+                count = 1;
             }
         }
         return !set.contains(count);

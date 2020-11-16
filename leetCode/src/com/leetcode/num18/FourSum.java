@@ -24,7 +24,7 @@ public class FourSum {
             if (i > start && nums[i] == nums[i - 1]) {
                 continue;
             }
-            if(3-depth<nums.length-i-1){
+            if (3 - depth < nums.length - i - 1) {
                 continue;
             }
             path.add(nums[i]);

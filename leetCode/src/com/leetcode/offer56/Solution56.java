@@ -19,6 +19,6 @@ public class Solution56 {
                 b ^= num;
             }
         }
-        return new int[]{a,b};
+        return new int[]{a, b};
     }
 }

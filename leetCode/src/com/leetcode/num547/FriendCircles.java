@@ -9,15 +9,15 @@ public class FriendCircles {
         UnionFind unionFind = new UnionFind(n);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if(M[i][j]==1){
-                    unionFind.join(j,i);
+                if (M[i][j] == 1) {
+                    unionFind.join(j, i);
                 }
             }
         }
         int[] res = unionFind.getArr();
         int count = 0;
         Set<Integer> root = new HashSet<>();
-        for(int i=0;i<res.length;i++){
+        for (int i = 0; i < res.length; i++) {
             root.add(unionFind.find(res[i]));
         }
         return root.size();

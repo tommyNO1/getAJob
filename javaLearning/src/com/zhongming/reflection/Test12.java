@@ -10,7 +10,7 @@ public class Test12 {
 
         //通过反射获得注解
         Annotation[] annotations = c1.getAnnotations();
-        for(Annotation annotation:annotations){
+        for (Annotation annotation : annotations) {
             System.out.println(annotation);
         }
 
@@ -29,13 +29,13 @@ public class Test12 {
 }
 
 @Table("db_student")
-class Student2{
+class Student2 {
 
-    @FieldAnnotation(columnName = "db_id",type = "int",length = 10)
+    @FieldAnnotation(columnName = "db_id", type = "int", length = 10)
     private int id;
-    @FieldAnnotation(columnName = "db_age",type = "int",length = 10)
+    @FieldAnnotation(columnName = "db_age", type = "int", length = 10)
     private int age;
-    @FieldAnnotation(columnName = "db_name",type = "varchar",length = 10)
+    @FieldAnnotation(columnName = "db_name", type = "varchar", length = 10)
     private String name;
 
     public Student2() {
@@ -75,7 +75,7 @@ class Student2{
 //类名的注解
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@interface Table{
+@interface Table {
     String value();
 }
 
@@ -84,7 +84,9 @@ class Student2{
 @Retention(RetentionPolicy.RUNTIME)
 @interface FieldAnnotation {
     String columnName();
+
     String type();
+
     int length();
 
 }

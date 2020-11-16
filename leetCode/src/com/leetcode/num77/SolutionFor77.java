@@ -16,10 +16,10 @@ public class SolutionFor77 {
             res.add(new ArrayList<>(path));
             return;
         }
-        for (int i = start; i <= n-(path.size()-k)+1; i++) {
+        for (int i = start; i <= n - (path.size() - k) + 1; i++) {
             path.add(i);
-            dfs(path,res,i+1,n,k);
-            path.remove(path.size()-1);
+            dfs(path, res, i + 1, n, k);
+            path.remove(path.size() - 1);
         }
     }
 

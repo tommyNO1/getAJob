@@ -20,7 +20,7 @@ public class SolutionFor39 {
         if (target < 0) return;
         for (int i = start; i < candidates.length; i++) {
             path.add(candidates[i]);
-            dfs(path, res, candidates, i, target-candidates[i]);
+            dfs(path, res, candidates, i, target - candidates[i]);
             path.remove(path.size() - 1);
         }
     }

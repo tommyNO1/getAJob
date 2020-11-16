@@ -14,9 +14,9 @@ public class SolutionFor60 {
         for (int i = 1; i < n + 1; i++) {
             factorial[i] = factorial[i - 1] * i;
         }
-        used = new boolean[n+1];
+        used = new boolean[n + 1];
         StringBuilder path = new StringBuilder();
-        dfs(0,path);
+        dfs(0, path);
         return path.toString();
 
     }
@@ -25,18 +25,18 @@ public class SolutionFor60 {
         if (depth == n) {
             return;
         }
-        int count = factorial[n -1 - depth];
-        for (int i = 1; i < n+1; i++) {
+        int count = factorial[n - 1 - depth];
+        for (int i = 1; i < n + 1; i++) {
             if (used[i]) {
                 continue;
             }
-            if (count<k){
+            if (count < k) {
                 k -= count;
                 continue;
             }
             path.append(i);
-            used[i]=true;
-            dfs(depth+1,path);
+            used[i] = true;
+            dfs(depth + 1, path);
         }
     }
 }

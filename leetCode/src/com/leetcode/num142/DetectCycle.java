@@ -21,14 +21,14 @@ public class DetectCycle {
                 break;
             }
         }
-        if(hasCycle){
+        if (hasCycle) {
             ListNode ph = head;
-            while (ph!=ps){
+            while (ph != ps) {
                 ph = ph.next;
                 ps = ps.next;
             }
             return ph;
-        }else {
+        } else {
             return null;
         }
     }
